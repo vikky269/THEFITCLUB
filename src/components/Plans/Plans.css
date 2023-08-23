@@ -1,0 +1,107 @@
+
+.plan-header{
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic; 
+}
+.plan-header>:nth-child(2){
+    line-height: 3rem;
+}
+.plans-container{
+    margin-top: -4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+.plan{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.plans{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+}
+.plans:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.plans>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.plans>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.plans>:nth-child(5){
+    font-size: 0.8rem;
+}
+.plan>:nth-child(2)>svg{
+    fill: white;
+}
+.plan>:nth-child(2)>button{
+    color: orange;
+}
+.plans>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.feature>img{
+    width: 1rem;
+}
+.btn-join{
+    color: black;
+}
+.plans-blur-1{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+}
+.plans-blur-2{
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+}
+@media screen  and  (max-width:768px) {
+    .plan-header{
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+       }
+       .plan{
+        flex-direction: column;
+       }
+       .plan:nth-child(2){
+        transform: none;
+       }
+}
