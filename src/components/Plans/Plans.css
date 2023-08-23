@@ -89,6 +89,9 @@
     top: 10rem;
     right: 0rem;
 }
+.plans:hover{
+    transform: scale(1.01);
+}
 @media screen  and  (max-width:768px) {
     .plan-header{
         flex-direction: column;
